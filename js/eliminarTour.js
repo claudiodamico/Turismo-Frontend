@@ -2,7 +2,7 @@ document.getElementById('deleteTourForm').addEventListener('submit', function(ev
     event.preventDefault();
 
     const tourId = document.getElementById('tourId').value;
-    const url = `http://localhost:5259/api/Tours/${tourId}`; 
+    const url = `http://localhost:5259/api/Tour/${tourId}`; 
 
     fetch(url, {
         method: 'DELETE',

@@ -15,7 +15,7 @@ function fetchReservas() {
             lista.innerHTML = ''; // Limpiar lista actual
             reservas.forEach(reserva => {
                 lista.innerHTML += `
-                    <li>Cliente: ${reserva.cliente}, Fecha de Reserva: ${new Date(reserva.fechaReserva).toLocaleDateString()}, Tour: ${reserva.tourId}</li>
+                    <li>Cliente: ${reserva.cliente}, Fecha de Reserva: ${new Date(reserva.fechaReserva).toLocaleDateString()}, Tour: ${reserva.tourId}, ID de Reserva: ${reserva.id}</li>
                 `;
             });
         })

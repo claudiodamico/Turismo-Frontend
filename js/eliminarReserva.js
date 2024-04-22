@@ -2,7 +2,7 @@ document.getElementById('deleteReservaForm').addEventListener('submit', function
     event.preventDefault();
 
     const reservaId = document.getElementById('reservaId').value;
-    const url = `http://localhost:5259/api/Reservas/${reservaId}`; 
+    const url = `http://localhost:5259/api/Reserva/${reservaId}`; 
 
     fetch(url, {
         method: 'DELETE',

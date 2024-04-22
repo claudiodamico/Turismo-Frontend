@@ -17,6 +17,7 @@ function cargarTours() {
                 <p>Destino: ${tour.destino}</p>
                 <p>Fecha Salida: ${new Date(tour.fechaInicio).toLocaleDateString()} - Regreso: ${new Date(tour.fechaFin).toLocaleDateString()}</p>
                 <p>Precio: $${tour.precio.toFixed(2)}</p>
+                <p>ID de Tour: ${tour.id}</p>
             `;
             contenedorTours.appendChild(div);
         });
